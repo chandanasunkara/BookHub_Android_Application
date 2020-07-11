@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment"
+    android:id="@+id/profileView">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_fragment"
+        android:textSize="20sp"
+        android:padding="10dp"-->
+
+        <TextView
+            android:id="@+id/yourProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_the_creator"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textColor="#bf360c"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"/>
+        <ImageView
+            android:id="@+id/rowanImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/yourProfile"
+            android:src="@drawable/rowan_atkinson" />
+        <TextView
+            android:id="@+id/etYourName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rowan_atkinson_sebastian"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/rowanImage"
+            android:layout_below="@id/yourProfile"
+            android:textColor="#e64a19"
+            android:paddingTop="20dp"
+            android:paddingBottom="5dp"
+            android:textStyle="italic"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="30dp"/>
+        <TextView
+            android:id="@+id/etYourMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rowan_sebastian_com"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/rowanImage"
+            android:layout_below="@id/etYourName"
+            android:paddingBottom="5dp"
+            android:textColor="#f57c00"
+            android:textStyle="italic"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="30dp"/>
+        <TextView
+            android:id="@+id/etYourPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1234567890"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/rowanImage"
+            android:layout_below="@id/etYourMail"
+            android:textColor="#f57c00"
+            android:textStyle="italic"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="30dp"/>
+
+</RelativeLayout>
